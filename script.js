@@ -89,26 +89,22 @@ document.querySelectorAll('section, .box, .portfolio-item, .carousel-slide').for
 console.log('Portfolio site loaded successfully!');
 
 
-// Contact form handling (add this to your existing script.js)
+// Contact form with mailto - better UX
 const contactForm = document.getElementById('contactForm');
 
 if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form values
+        // Get form values for confirmation
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
         const message = document.getElementById('message').value;
         
-        // Show success message (demo - doesn't actually send email)
-        alert(`Thank you ${name}! Your message has been sent.\n\nI'll get back to you soon.`);
+        // Show what will be sent
+        const confirmSend = confirm(`Send message to musabattah@gmail.com?\n\nFrom: ${name} (${email})\nMessage: ${message.substring(0, 50)}...`);
         
-        // Reset form
-        contactForm.reset();
-        
-        // In a real application, you would send this data to a server
-        console.log('Form submitted:', { name, email, subject, message });
+        if (!confirmSend) {
+            e.preventDefault(); // Stop if user cancels
+        }
+        // If confirmed, form submits normally to mailto:
     });
 }
