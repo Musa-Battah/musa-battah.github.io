@@ -27,18 +27,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Button click alerts (for demo purposes)
-const buttons = document.querySelectorAll('.btn');
-buttons.forEach(button => {
-    button.addEventListener('click', (e) => {
-        if (button.textContent === 'Learn More') {
-            alert('Thanks for your interest! More about me coming soon.');
-        } else if (button.textContent === 'Contact Me') {
-            alert('Feel free to reach out via email or social media!');
-        } else if (button.textContent === 'View Project') {
-            alert('Project details will be added soon!');
-        }
-    });
-});
+// const buttons = document.querySelectorAll('.btn');
+// buttons.forEach(button => {
+//     button.addEventListener('click', (e) => {
+//         if (button.textContent === 'Learn More') {
+//             alert('Thanks for your interest! More about me coming soon.');
+//         } else if (button.textContent === 'Contact Me') {
+//             alert('Feel free to reach out via email or social media!');
+//         } else if (button.textContent === 'View Project') {
+//             alert('Project details will be added soon!');
+//         }
+//     });
+// });
 
 // Add active class to current section in navbar
 const sections = document.querySelectorAll('section');
