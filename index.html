@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Battah - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">MB</a>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>        
+        </div>
+    </nav>
+
+<!-- Intro Section with Flexbox -->
+<section class="intro">
+    <div class="intro-container">
+        <div class="box box-large">
+            <h2>About Me</h2>
+            <hr>
+                        <br>
+
+            <p>I build scalable fintech web applications focused on performance, security, and seamless user experience. Specialized in modern full-stack development with Next.js, React, Node.js, Express.js, JavaScript, Python, PostgreSQL, and RESTful APIs, I create fast, reliable, and data-driven digital solutions for startups and businesses. From responsive frontend interfaces to secure backend architectures, I turn complex financial workflows into efficient, user-friendly products.
+            </p>
+            <!-- <p>Skills: HTML, CSS, JavaScript, React, Node.js, Python, Dart</p> -->
+            <!-- <button class="btn">Learn More</button> -->
+        </div>
+            <div class="box box-small image-box">
+                <img src="./assets/Profile Pic.HEIC" alt="Musa Battah" class="profile-photo">
+                <h3>Musa Battah</h3>
+                <p>Web Developer</p>
+            </div>    
+        </div>
+</section>
+
+
+
+<!-- Tech Stack Carousel Section -->
+<section class="carousel-section">
+    <h2 class="section-title">My Tech Stack</h2>
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                <p>React</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="ExpressJS">
+                <p>ExpressJS</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="NextJS">
+                <p>NextJS</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                <p>Node.js</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                <p>Dart</p>
+            </div>
+            <!-- Duplicate for seamless loop -->
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                <p>React</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="ExpressJS">
+                <p>ExpressJS</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="NextJS">
+                <p>NextJS</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS">
+                <p>Node.js</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="carousel-slide">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                <p>Dart</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+    <div class="container">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            
+            <!-- Invoice & Billing System -->
+            <div class="portfolio-item">
+                <div class="portfolio-image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop" alt="Invoice & Billing System" class="portfolio-img">
+                    <!-- <div class="placeholder-overlay">Invoice System</div> -->
+                </div>
+                <h3>Invoice & Billing System</h3>
+                <p>Professional invoice management system with PDF generation. Enables businesses to create, track, and manage client invoices with automatic payment status tracking.</p>
+                <p><strong>Stack:</strong> Next.js, PostgreSQL, React-PDF</p>
+                <a href="invoice-system-jet.vercel.app" target="_blank" class="btn">View Project</a>
+            </div>
+            
+            <!-- Appointment Booking System -->
+            <div class="portfolio-item">
+                <div class="portfolio-image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&h=400&fit=crop" alt="Appointment Booking System" class="portfolio-img">
+                    <!-- <div class="placeholder-overlay">Appointment System</div> -->
+                </div>
+                <h3>Appointment Booking System</h3>
+                <p>Online scheduling platform with weekly calendar view. Prevents double-booking and allows clients to book services based on real-time availability.</p>
+                <p><strong>Stack:</strong> Next.js, PostgreSQL, Custom Calendar</p>
+                <a href="https://appointment-system-three-rho.vercel.app/" target="_blank" class="btn">View Project</a>
+            </div>
+            
+            <!-- Inventory Management System -->
+            <div class="portfolio-item">
+                <div class="portfolio-image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" alt="Inventory Management System" class="portfolio-img">
+                    <!-- <div class="placeholder-overlay">Inventory System</div> -->
+                </div>
+                <h3>Inventory Management System</h3>
+                <p>Complete stock tracking system with low stock alerts, supplier management, and Naira currency support. Tracks all stock movements with audit trail.</p>
+                <p><strong>Stack:</strong> Next.js, PostgreSQL, Stock Tracking</p>
+                <a href="https://inventory-system-alpha-topaz.vercel.app/" target="_blank" class="btn">View Project</a>
+            </div>
+            
+            <!-- School Management System -->
+            <div class="portfolio-item">
+                <div class="portfolio-image-placeholder">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="School Management System" class="portfolio-img">
+                    <!-- <div class="placeholder-overlay">School MS</div> -->
+                </div>
+                <h3>School Management System</h3>
+                <p>Comprehensive school administration platform. Manages student enrollment, class assignments, daily attendance tracking, and student records.</p>
+                <p><strong>Stack:</strong> Next.js, PostgreSQL, Attendance System</p>
+                <a href="https://school-ms-neon.vercel.app/" target="_blank" class="btn">View Project</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Musa Battah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
