@@ -7,7 +7,7 @@
 
 /* Body - Black background */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Playpen Sans','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: white;
     background-color: black;
@@ -621,12 +621,12 @@ footer {
 }
 
 /* Alternative: If you don't have images yet, use this icon background */
-.portfolio-image-placeholder::before {
+/* .portfolio-image-placeholder::before {
     content: "🖼️";
     font-size: 3rem;
     opacity: 0.5;
     position: absolute;
-}
+} */
 
 .portfolio-img[src=""] + .placeholder-overlay,
 .portfolio-img:not([src]) + .placeholder-overlay {
